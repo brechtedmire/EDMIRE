@@ -1,0 +1,7 @@
+{
+  "utterance": "Monkey",
+  "intent_type": "MonkeyIntent",
+  "intent": {
+    "MonkeyKeyword": "Monkey"
+  }
+}
