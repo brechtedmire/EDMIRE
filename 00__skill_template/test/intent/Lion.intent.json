@@ -2,6 +2,6 @@
   "utterance": "Lion",
   "intent_type": "LionIntent",
   "intent": {
-    "LionKeyword": "Lion"
+    "LionKeyword": "lion"
   }
 }
