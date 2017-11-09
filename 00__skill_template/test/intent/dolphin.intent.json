@@ -1,0 +1,7 @@
+{
+  "utterance": "Dolphin",
+  "intent_type": "DolphinIntent",
+  "intent": {
+    "DolphinKeyword": "dolphin"
+  }
+}
