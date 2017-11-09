@@ -2,10 +2,7 @@
 
 This skill does ...
 
-To get this done we need
-  - This
-  - That
-  - The other thing
+Read childrens books when you call the figures in it
 
 
 ## Current state
