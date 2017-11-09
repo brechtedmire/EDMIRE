@@ -1,7 +1,7 @@
 {
-  "utterance": "Hello world",
-  "intent_type": "HelloWorldIntent",
+  "utterance": "Bear",
+  "intent_type": "BearIntent",
   "intent": {
-    "HelloWorldKeyword": "hello world"
+    "BearKeyword": "bear"
   }
 }
