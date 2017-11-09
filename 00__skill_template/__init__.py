@@ -49,19 +49,24 @@ class GingerSkill(MycroftSkill):
     def initialize(self):
         self.load_data_files(dirname(__file__))
 
-        thank_you_intent = IntentBuilder("ThankYouIntent").\
-            require("ThankYouKeyword").build()
-        self.register_intent(thank_you_intent, self.handle_thank_you_intent)
+        Lion_intent = IntentBuilder("LionIntent").\
+            require("LionKeyword").build()
+        self.register_intent(lion_intent, self.handle_Lion_intent)
 
-        how_are_you_intent = IntentBuilder("HowAreYouIntent").\
-            require("HowAreYouKeyword").build()
-        self.register_intent(how_are_you_intent,
-                             self.handle_how_are_you_intent)
+        Monkey_intent = IntentBuilder("MonkeyIntent").\
+            require("MonkeyKeyword").build()
+        self.register_intent(monkey_intent,
+                             self.handle_monkey_intent)
+        
+        Bear_intent = IntentBuilder("BearIntent").\
+            require("BearKeyword").build()
+        self.register_intent(bear_intent,
+                             self.handle_bear_intent)
 
-        hello_world_intent = IntentBuilder("HelloWorldIntent").\
-            require("HelloWorldKeyword").build()
-        self.register_intent(hello_world_intent,
-                             self.handle_hello_world_intent)
+        Dolphin_intent = IntentBuilder("DolphinIntent").\
+            require("DolphinKeyword").build()
+        self.register_intent(dolphin_intent,
+                             self.handle_dolphin_intent)
 
     # The "handle_xxxx_intent" functions define Mycroft's behavior when
     # each of the skill's intents is triggered: in this case, he simply
@@ -69,14 +74,17 @@ class GingerSkill(MycroftSkill):
     # actually speak the text it's passed--instead, that text is the filename
     # of a file in the dialog folder, and Mycroft speaks its contents when
     # the method is called.
-    def handle_thank_you_intent(self, message):
-        self.speak_dialog("welcome")
+    def monkey_intent(self, message):
+        self.speak_dialog("the.monkey.swings.in.the.three")
 
-    def handle_how_are_you_intent(self, message):
-        self.speak_dialog("how.are.you")
+    def dolphin_intent(self, message):
+        self.speak_dialog("the.dolphin.jumps.really.high")
+        
+    def lion_intent(self, message):
+        self.speak_dialog("the lion is going to catch a monkey")
 
-    def handle_hello_world_intent(self, message):
-        self.speak_dialog("hello.world")
+    def bear_intent(self, message):
+        self.speak_dialog("the.bear.is.trying.to.eat.honey")
 
     # The "stop" method defines what Mycroft does when told to stop during
     # the skill's execution. In this case, since the skill's functionality
